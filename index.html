@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container" id="container">
+  <!-- Tela de Criar Conta -->
+  <div class="form-container sign-up-container">
+    <form>
+      <h1>Crie a <span class="blue">sua conta</span></h1>
+      <input type="text" placeholder="Nome" required />
+      <input type="text" placeholder="Sobrenome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <input type="password" placeholder="Sua senha" required />
+      <button>Criar conta</button>
+    </form>
+  </div>
+
+  <!-- Tela de Login -->
+  <div class="form-container sign-in-container">
+    <form>
+      <h1>Faça seu <span class="blue">login</span></h1>
+      <input type="email" placeholder="Seu e-mail" required />
+      <input type="password" placeholder="Sua senha" required />
+      <a href="#">Esqueceu a senha?</a>
+      <button>Fazer login</button>
+      <p>Ou faça login usando:</p>
+      <div class="social-login">
+        <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+        <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png"/>
+        <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png"/>
+      </div>
+    </form>
+  </div>
+
+  <!-- Overlay com os botões -->
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h2>Bem-vindo de volta!</h2>
+        <p>Já tem uma conta?</p>
+        <button class="ghost" id="signIn">Fazer login</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h2>Olá, viajante!</h2>
+        <p>Não tem uma conta ainda?</p>
+        <button class="ghost" id="signUp">Criar conta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
